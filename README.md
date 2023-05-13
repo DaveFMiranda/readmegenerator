@@ -1,2 +1,3 @@
-# readmegenerator
-A command line program that takes input and creates a readme
+# Professional README Generator Starter Code
+
+[How to create a Professional README](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
