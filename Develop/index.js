@@ -19,13 +19,13 @@ THEN I am taken to the corresponding section of the README
 */
 
 const inquirer = require('inquirer');
-answersArray = [];
+const fs = require('fs');
 inquirer
   .prompt([
     {
       type: 'input',
       message: 'What is your GitHub username?',
-      name: 'userName',
+      name: 'username',
     },
 {
   type: 'input',
@@ -65,7 +65,7 @@ THEN a badge for that license is added near the top of the README and a notice i
     {
       type: 'input',
       message: 'What does the user need to know about using the repo?',
-      default: 'While in the same folder as the index.js file, type node index.js into the command prompt.'
+      default: 'While in the same folder as the index.js file, type node index.js into the command prompt.',
       name: 'usage',
     },
     {
@@ -75,25 +75,26 @@ THEN a badge for that license is added near the top of the README and a notice i
     },
   ])
   .then((answers) => {
-    answersArray.push(answers);
-    console.log(answersArray);  
+    console.log(answers);  
+    console.log(answers.title);
+    writeToFile('README.md', answers);
   });
 
+  const generateMarkdown = require('./utils/generateMarkdown');
 
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {
+
+function writeToFile(fileName, answers) {
+  const content = generateMarkdown(answers);
+  fs.writeFileSync(fileName, content);
 
 
- // Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
-
-// write all the text of a readme file here, including header code, then...
-// insert data where appropriate from the array created above
 
 
 }
 
 
+/*
 
 
 // TODO: Create a function to initialize app
@@ -102,3 +103,4 @@ function init() {}
 
 // Function call to initialize app
 init();
+*/
