@@ -1,5 +1,7 @@
 # 
-  
+
+![License]()
+
 ## Description
 
 
@@ -30,7 +32,7 @@ While in the same folder as the index.js file, type node index.js into the comma
 
 ## License
 
-This project is licensed under the MIT license.
+This project is licensed under the None license.
 
 ## Contributing
 

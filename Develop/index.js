@@ -45,8 +45,6 @@ inquirer
     {
       type: 'list',
       message: 'Which license did you use for your project? (use arrow key)',
-      /* WHEN I choose a license for my application from a list of options
-THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under */
       name: 'license',
       choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None']
     },
