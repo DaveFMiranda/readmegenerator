@@ -18,47 +18,74 @@ THEN I am taken to the corresponding section of the README
 
 */
 
-// TODO: Include packages needed for this application
 const inquirer = require('inquirer');
-
-// TO DO: insert questions below
+answersArray = [];
 inquirer
   .prompt([
     {
       type: 'input',
-      message: 'What is your user name?',
-      name: 'username',
+      message: 'What is your GitHub username?',
+      name: 'userName',
+    },
+{
+  type: 'input',
+  message: 'What is your email address?',
+  name: 'email',
+},
+    {
+      type: 'input',
+      message: 'What is your project\'s name?',
+      name: 'title',
     },
     {
-      type: 'password',
-      message: 'What is your password?',
-      name: 'password',
+      type: 'input',
+      message: 'Please write a short description of your project:',
+      name: 'description',
     },
     {
-      type: 'password',
-      message: 'Re-enter password to confirm:',
-      name: 'confirm',
+      type: 'list',
+      message: 'Which license did you use for your project? (use arrow key)',
+      /* WHEN I choose a license for my application from a list of options
+THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under */
+      name: 'license',
+      choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None']
+    },
+    {
+      type: 'input',
+      message: 'What command should be run to install dependencies?',
+      default: 'npm i',
+      name: 'installation',
+    },
+    {
+      type: 'input',
+      message: 'What command should be used to run tests?',
+      default: 'npm test',
+      name: 'tests',
+    },
+    {
+      type: 'input',
+      message: 'What does the user need to know about using the repo?',
+      default: 'While in the same folder as the index.js file, type node index.js into the command prompt.'
+      name: 'usage',
+    },
+    {
+      type: 'input',
+      message: 'What does the user need to know about contributing to the project?',
+      name: 'contributing',
     },
   ])
-  // store the data to the questions array
-  .then((response) =>
-    response.confirm === response.password
-      ? console.log('Success!')
-      : console.log('You forgot your password already?!')
-  );
+  .then((answers) => {
+    answersArray.push(answers);
+    console.log(answersArray);  
+  });
 
 
-// TODO: Create an array of questions for user input
-const questions = [
-// insert variables here that pull data from the answers above
-// 
-
-
-
-];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
+
+
+ // Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
 
 // write all the text of a readme file here, including header code, then...
 // insert data where appropriate from the array created above
