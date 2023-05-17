@@ -1,14 +1,17 @@
+// Function to render the license badge
 function renderLicenseBadge(license) {
-  if (license === 'None'){
-    return ''
+  // Leaves a blank if user selects "none" for license
+  if (license === "None") {
+    return "";
+    // Pulls in a license badge from shields.io
   } else {
-    var formattedLicense = license.replace(/\s+/g, '');
-    var badgeURL = `https://img.shields.io/badge/License-${formattedLicense}-blue`
+    var formattedLicense = license.replace(/\s+/g, "");
+    var badgeURL = `https://img.shields.io/badge/License-${formattedLicense}-blue`;
     return badgeURL;
-  } 
+  }
 }
 
-
+// Creates the markdown skeleton for the README and imports user-generated answers
 function generateMarkdown(answers) {
   const badgeURL = renderLicenseBadge(answers.license);
   return `# ${answers.title}
@@ -63,4 +66,5 @@ If you have any questions about the repo, open an issue or contact me directly a
   `;
 }
 
+// Makes the above function available to other files
 module.exports = generateMarkdown;
