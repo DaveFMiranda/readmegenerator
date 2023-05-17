@@ -36,15 +36,15 @@ This project is licensed under the MIT license.
 
 ## Contributing
 
-Please don't.
+n/a
 
 ## Tests
 
 To run tests, run the following command:
 
-  n/a
+  npm test
 
 ## Questions
 
-If you have any questions about the repo, open an issue or contact me directly at [notarealaddress@notgmail.com](mailto:notarealaddress@notgmail.com). You can find more of my work at [www.GitHub.com/DaveFMiranda](https://www.github.com/DaveFMiranda).
+If you have any questions about the repo, open an issue or contact me directly at [notreal@gmail.com](mailto:notreal@gmail.com). You can find more of my work at [www.GitHub.com/DaveFMiranda](https://www.github.com/DaveFMiranda).
   
