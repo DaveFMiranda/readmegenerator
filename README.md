@@ -4,7 +4,13 @@
 
 ## Description
 
-This app takes in user input and generates a README file  about their project.
+This app accepts user input and generates a README file based on that input.
+
+Here's a walkthrough video: https://watch.screencastify.com/v/hh3Sg2wwCV7gyCOLXnPX
+
+Here's a screenshot of the input: ![Screenshot](develop/screenshot1.png)
+
+Here's a screenshot of a sample README: ![Screenshot](develop/screenshot2.png)
 
 ## Table of Contents
 
@@ -34,15 +40,13 @@ While in the same folder as the index.js file, type node index.js into the comma
 
 This project is licensed under the MIT license.
 
+## Credits
+
+The starter code for this project came from https://github.com/coding-boot-camp/potential-enigma.
+
 ## Contributing
 
 n/a
-
-## Tests
-
-To run tests, run the following command:
-
-  npm test
 
 ## Questions
 
