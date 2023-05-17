@@ -1,10 +1,10 @@
-# c
+# 
 
-![]()
+![](https://img.shields.io/badge/License-MIT-blue)
 
 ## Description
 
-d
+
 
 ## Table of Contents
 
@@ -24,27 +24,27 @@ d
 
 To install necessary dependencies, run the following command:
 
-  e
+  npm i
 
 ## Usage
 
-g
+While in the same folder as the index.js file, type node index.js into the command prompt.
 
 ## License
 
-This project is licensed under the None license.
+This project is licensed under the MIT license.
 
 ## Contributing
 
-  h
+
 
 ## Tests
 
 To run tests, run the following command:
 
-  f
+  npm test
 
 ## Questions
 
-If you have any questions about the repo, open an issue or contact me directly at b. You can find more of my work at a.
+If you have any questions about the repo, open an issue or contact me directly at [dave@da](mailto:dave@da). You can find more of my work at [www.GitHub.com/daeve](https://www.github.com/daeve).
   
