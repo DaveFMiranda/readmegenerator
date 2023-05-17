@@ -1,10 +1,10 @@
-# 
+# c
 
-![License]()
+![]()
 
 ## Description
 
-
+d
 
 ## Table of Contents
 
@@ -24,11 +24,11 @@
 
 To install necessary dependencies, run the following command:
 
-  npm i
+  e
 
 ## Usage
 
-While in the same folder as the index.js file, type node index.js into the command prompt.
+g
 
 ## License
 
@@ -36,15 +36,15 @@ This project is licensed under the None license.
 
 ## Contributing
 
-  
+  h
 
 ## Tests
 
 To run tests, run the following command:
 
-  npm test
+  f
 
 ## Questions
 
-If you have any questions about the repo, open an issue or contact me directly at . You can find more of my work at .
+If you have any questions about the repo, open an issue or contact me directly at b. You can find more of my work at a.
   

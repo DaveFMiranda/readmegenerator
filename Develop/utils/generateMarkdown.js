@@ -13,7 +13,7 @@ function generateMarkdown(answers) {
   const badgeURL = renderLicenseBadge(answers.license);
   return `# ${answers.title}
 
-![License](${badgeURL})
+![](${badgeURL})
 
 ## Description
 
