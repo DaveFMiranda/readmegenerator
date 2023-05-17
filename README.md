@@ -8,9 +8,9 @@ This app accepts user input and generates a README file based on that input.
 
 Here's a walkthrough video: https://watch.screencastify.com/v/hh3Sg2wwCV7gyCOLXnPX
 
-Here's a screenshot of the input: ![Screenshot](./develop/screenshot1.png)
+Here's a screenshot of the input: ![Screenshot](screenshot1.png)
 
-Here's a screenshot of a sample README: ![Screenshot](./develop/screenshot2.png)
+Here's a screenshot of a sample README: ![Screenshot](screenshot2.png)
 
 ## Table of Contents
 
